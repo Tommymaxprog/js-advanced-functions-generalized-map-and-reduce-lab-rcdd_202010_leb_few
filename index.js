@@ -14,7 +14,7 @@ function reduce(arr, funct, start){
   let r = (start) ? start : arr[0]
   let i = (start) ? 0 : 1
 
-  for (; i < arr.length; i++) {
+  for (i; i < arr.length; i++) {
     r = funct(arr[i], r)
   }
 
