@@ -3,7 +3,7 @@ function map(arr, funct) {
   let a = []
 
   for (let i = 0; i < arr.length; i++) {
-    let b = arr[j]
+    let b = arr[i]
     a.push(funct(b))
   }
 
