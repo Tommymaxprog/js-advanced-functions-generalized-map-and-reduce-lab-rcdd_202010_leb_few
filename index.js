@@ -1,16 +1,16 @@
 // Add your functions here
-function map(src, cb) {
-  let r = []
+function map(arr, funct) {
+  let a = []
 
-  for (let i = 0; i < src.length; i++) {
-    let theElement = src[j]
-    r.push(cb(theElement))
+  for (let i = 0; i < arr.length; i++) {
+    let b = arr[j]
+    a.push(funct(b))
   }
 
-  return r;
+  return a;
 }
 
-function reduce(src, cb, starting){
+function reduce(arr, funct, start){
   let r = (!!starting) ? starting : src[0]
   let i = (!!starting) ? 0 : 1
 
